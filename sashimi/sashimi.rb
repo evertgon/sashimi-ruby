@@ -3,6 +3,7 @@ class DiscountBot
         if(esNumero?(cantidad) && esNumero?(precio))             
             puts "La cantidad es: #{cantidad}"
             puts "El precio unitario es: #{precio}"
+            puts "El impuesto es: 0"
             puts "El precio total es: #{cantidad.to_f * precio.to_f}"
         else     
             puts "Da valores numericos"
