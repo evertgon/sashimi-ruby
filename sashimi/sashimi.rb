@@ -1,6 +1,6 @@
 class DiscountBot
     def calcular(cantidad, precio)
-        if(esNumero?(cantidad))
+        if(esNumero?(cantidad) && esNumero?(precio))
             puts "La cantidad es: #{cantidad}"
             puts "El precio unitario es: #{precio}"
         else     
