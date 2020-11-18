@@ -1,8 +1,15 @@
 class DiscountBot
     def calcular(cantidad, precio)
-        puts "La cantidad es: #{cantidad}"
-        puts "El precio unitario es: #{precio}"
+        if(esNumero?(cantidad))
+            puts "La cantidad es: #{cantidad}"
+            puts "El precio unitario es: #{precio}"
+        else     
+            puts "Da valores numericos"
+        end
     end    
+    def esNumero?(cantidad)
+        return Float(cantidad) != nil rescue false
+      end 
 end
 
 discount_bot = DiscountBot.new()
